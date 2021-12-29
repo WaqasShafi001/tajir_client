@@ -19,8 +19,8 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
           Navigator.of(context).pop(),
         };
     BlurryDialog alert = BlurryDialog(
-        "Apny Store py ja kr dbara try kren",
-        "Order Deliver krny k liye apky store ki location lazmi hai",
+        "اپنے اسٹور پر جا کر دوبارہ کوشش کریں",
+        "آرڈر کی ترسیل کے فنکشن کے لیے آپ کے اسٹور کا مقام لازمی ہےs",
         continueCallBack);
 
     showDialog(
@@ -39,7 +39,7 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.mainPrimaryColor,
         title: Text(
-          'Apny store ki location darj kren',
+          'اپنے اسٹور کا مقام درج کریں۔',
           textDirection: TextDirection.rtl,
           textAlign: TextAlign.right,
         ),
@@ -51,7 +51,7 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
           SizedBox(height: height * 0.04),
           Center(
             child: Text(
-              'Kia aap abhi store par mojud hain?',
+              'کیا آپ اس وقت اسٹور میں ہیں؟',
               style: TextStyle(
                 color: AppColors.blackColor,
                 fontSize: height * 0.02,
@@ -75,7 +75,7 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        'Haan,',
+                        ',ہاں',
                         style: TextStyle(
                           color: AppColors.whiteColor,
                           fontSize: height * 0.022,
@@ -83,7 +83,7 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
                       ),
                       SizedBox(height: height * 0.01),
                       Text(
-                        'Store par mojud hun',
+                        'دکان پر ہوں',
                         style: TextStyle(
                           color: AppColors.whiteColor,
                           fontSize: height * 0.022,
@@ -104,7 +104,7 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        'Nahin,',
+                        ',نہیں',
                         style: TextStyle(
                           color: AppColors.whiteColor,
                           fontSize: height * 0.022,
@@ -112,7 +112,7 @@ class _StoreDecisionScreenState extends State<StoreDecisionScreen> {
                       ),
                       SizedBox(height: height * 0.01),
                       Text(
-                        'Store se bahar hun',
+                        'دکان سے باہر ہوں',
                         style: TextStyle(
                           color: AppColors.whiteColor,
                           fontSize: height * 0.022,

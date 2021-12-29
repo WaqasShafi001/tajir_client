@@ -10,7 +10,8 @@ class BlurryDialog extends StatelessWidget {
   VoidCallback continueCallBack;
 
   BlurryDialog(this.title, this.content, this.continueCallBack);
-  TextStyle textStyle = TextStyle(color: Colors.black);
+  TextStyle textStyle =
+      TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold);
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +24,13 @@ class BlurryDialog extends StatelessWidget {
           ),
           content: Text(
             content,
-            style: textStyle,
+            style: textStyle.copyWith(fontWeight: FontWeight.normal),
           ),
           actions: <Widget>[
             MaterialButton(
               color: AppColors.mainPrimaryColor,
               child: Text(
-                "Theek hai",
+                "ٹھیک ہے",
                 style: TextStyle(
                   color: AppColors.whiteColor,
                 ),

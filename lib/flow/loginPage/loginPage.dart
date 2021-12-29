@@ -24,8 +24,9 @@ class _LoginPagePhNumbrState extends State<LoginPagePhNumbr> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.mainPrimaryColor,
+        centerTitle: true,
         title: Text(
-          'Apna Mobile Darj Kren',
+          'اپنا موبائل نمبر درج کیجئے',
           textDirection: TextDirection.rtl,
           textAlign: TextAlign.right,
         ),
@@ -40,7 +41,7 @@ class _LoginPagePhNumbrState extends State<LoginPagePhNumbr> {
               children: [
                 SizedBox(height: height * 0.05),
                 Text(
-                  'Apply kreny k liye apna mobile number darj kren',
+                  'اپلائی کرنے کے لیے اپنا موبائل نمبر درج کریں۔',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: height * 0.022,
@@ -76,8 +77,14 @@ class _LoginPagePhNumbrState extends State<LoginPagePhNumbr> {
                         },
                         keyboardType: TextInputType.phone,
                         showCursor: true,
+                        style: TextStyle(
+                          color: AppColors.mainPrimaryColor,
+                          fontSize: height * 0.022,
+                        ),
                         cursorColor: AppColors.mainPrimaryColor,
                         decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(color: AppColors.mainPrimaryColor),
                           labelStyle:
                               TextStyle(color: AppColors.mainPrimaryColor),
                           border: UnderlineInputBorder(
@@ -113,7 +120,7 @@ class _LoginPagePhNumbrState extends State<LoginPagePhNumbr> {
                       ? AppColors.mainPrimaryColor
                       : AppColors.greyColor,
                   child: Text(
-                    'Darj kren',
+                    'درج کریں',
                     style: TextStyle(
                       color: AppColors.whiteColor,
                       fontSize: height * 0.02,

@@ -6,7 +6,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class OnBoarding extends StatefulWidget {
   const OnBoarding({Key? key}) : super(key: key);
 
@@ -116,7 +115,12 @@ class _OnBoardingState extends State<OnBoarding> {
                         Get.to(LoginPagePhNumbr());
                       },
                       color: AppColors.whiteColor,
-                      child: Text('Apply kren'),
+                      child: Text(
+                        'درخواست دیں',
+                        style: TextStyle(
+                          fontSize: height * 0.022,
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -137,8 +141,11 @@ class _OnBoardingState extends State<OnBoarding> {
                           fixedSize: Size.fromWidth(width),
                         ),
                         child: Text(
-                          'log in',
-                          style: TextStyle(color: AppColors.whiteColor),
+                          'لاگ ان کریں',
+                          style: TextStyle(
+                            color: AppColors.whiteColor,
+                            fontSize: height * 0.022,
+                          ),
                         ),
                       ),
                     ),

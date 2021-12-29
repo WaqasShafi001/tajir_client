@@ -26,10 +26,12 @@ class _OTPScreenState extends State<OTPScreen> {
     var width = Get.width;
 
     return Scaffold(
+      backgroundColor: AppColors.whiteColor,
       appBar: AppBar(
         backgroundColor: AppColors.mainPrimaryColor,
+        centerTitle: true,
         title: Text(
-          'Toseeqi code darj kren',
+          'توصیقی کوڈ درج کریں',
           textDirection: TextDirection.rtl,
           textAlign: TextAlign.right,
         ),
@@ -43,12 +45,28 @@ class _OTPScreenState extends State<OTPScreen> {
             child: Column(
               children: [
                 SizedBox(height: height * 0.05),
-                Text(
-                  '${findPhoneNumberController.phoneNumbrController.text} par bheja gya code likhen',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: height * 0.022,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'پر بھیجے گئے کوڈ کو درج کریں',
+                      textDirection: TextDirection.rtl,
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: height * 0.022,
+                      ),
+                    ),
+                    Text(
+                      '${findPhoneNumberController.phoneNumbrController.text} ',
+                      textDirection: TextDirection.rtl,
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: height * 0.022,
+                      ),
+                    ),
+                  ],
                 ),
                 SizedBox(height: height * 0.015),
                 Center(
@@ -63,6 +81,7 @@ class _OTPScreenState extends State<OTPScreen> {
                       fieldStyle: FieldStyle.underline,
                       // outlineBorderRadius: 15,
                       style: TextStyle(
+                        color: AppColors.mainPrimaryColor,
                         fontSize: height * 0.022,
                       ),
                       onChanged: (pin) {
@@ -89,7 +108,7 @@ class _OTPScreenState extends State<OTPScreen> {
                       ? AppColors.mainPrimaryColor
                       : AppColors.greyColor,
                   child: Text(
-                    'Darj kren',
+                    'درج کریں',
                     style: TextStyle(
                       color: AppColors.whiteColor,
                       fontSize: height * 0.02,
@@ -98,7 +117,7 @@ class _OTPScreenState extends State<OTPScreen> {
                 ),
                 SizedBox(height: height * 0.03),
                 Text(
-                  'Code Dbara mangvaen',
+                  'کوڈ دبارا منگوائيں',
                   style: TextStyle(
                     color: AppColors.blueColor,
                     fontSize: height * 0.022,

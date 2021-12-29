@@ -25,8 +25,9 @@ class _StorenameScreenState extends State<StorenameScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.mainPrimaryColor,
+        centerTitle: true,
         title: Text(
-          'Aony store ka naam darj kren',
+          'اپنے اسٹور کا نام درج کریں۔',
           textDirection: TextDirection.rtl,
           textAlign: TextAlign.right,
         ),
@@ -41,7 +42,7 @@ class _StorenameScreenState extends State<StorenameScreen> {
               children: [
                 SizedBox(height: height * 0.05),
                 Text(
-                  'Aony store ka naam darj kren',
+                  'اپنے اسٹور کا نام درج کریں۔',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: height * 0.022,
@@ -67,6 +68,10 @@ class _StorenameScreenState extends State<StorenameScreen> {
                             textFieldClicked = true;
                           });
                         },
+                        style: TextStyle(
+                          color: AppColors.mainPrimaryColor,
+                          fontSize: height * 0.022,
+                        ),
                         keyboardType: TextInputType.name,
                         showCursor: true,
                         cursorColor: AppColors.mainPrimaryColor,
@@ -106,7 +111,7 @@ class _StorenameScreenState extends State<StorenameScreen> {
                       ? AppColors.mainPrimaryColor
                       : AppColors.greyColor,
                   child: Text(
-                    'Darj kren',
+                    'درج کریں',
                     style: TextStyle(
                       color: AppColors.whiteColor,
                       fontSize: height * 0.02,

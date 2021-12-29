@@ -26,8 +26,9 @@ class _FullnameScreenState extends State<FullnameScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.mainPrimaryColor,
+        centerTitle: true,
         title: Text(
-          'Apna pura naam darj kren',
+          'اپنا پورا نام درج کریں',
           textDirection: TextDirection.rtl,
           textAlign: TextAlign.right,
         ),
@@ -42,7 +43,7 @@ class _FullnameScreenState extends State<FullnameScreen> {
               children: [
                 SizedBox(height: height * 0.05),
                 Text(
-                  'Apna pura naam darj kren',
+                  'اپنا پورا نام درج کریں',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: height * 0.022,
@@ -68,6 +69,10 @@ class _FullnameScreenState extends State<FullnameScreen> {
                             textFieldClicked = true;
                           });
                         },
+                        style: TextStyle(
+                          color: AppColors.mainPrimaryColor,
+                          fontSize: height * 0.022,
+                        ),
                         keyboardType: TextInputType.name,
                         showCursor: true,
                         cursorColor: AppColors.mainPrimaryColor,
@@ -107,7 +112,7 @@ class _FullnameScreenState extends State<FullnameScreen> {
                       ? AppColors.mainPrimaryColor
                       : AppColors.greyColor,
                   child: Text(
-                    'Darj kren',
+                    'درج کریں',
                     style: TextStyle(
                       color: AppColors.whiteColor,
                       fontSize: height * 0.02,

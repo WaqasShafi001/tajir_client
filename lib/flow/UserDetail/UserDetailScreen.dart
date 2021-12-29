@@ -81,10 +81,11 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
-                                      'Ap k ilaqy mn serves shrw hoty he hum ap se rabta klren gy',
+                                      'جیسے ہی آپ کے علاقے میں سروس شروع ہوگی ہم آپ سے رابطہ کریں گے۔',
+                                      textAlign: TextAlign.right,
                                       style: TextStyle(
                                         color: AppColors.blackColor,
-                                        fontSize: height * 0.022,
+                                        fontSize: height * 0.02,
                                       ),
                                     ),
                                   ),
@@ -165,7 +166,7 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
                                                 MainAxisAlignment.end,
                                             children: [
                                               Text(
-                                                'Naam',
+                                                'نام',
                                                 style: TextStyle(
                                                   color: AppColors.blackColor,
                                                   fontSize: height * 0.022,
@@ -197,7 +198,7 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
                                                 MainAxisAlignment.end,
                                             children: [
                                               Text(
-                                                'Phone number',
+                                                'موبائل نمبر',
                                                 style: TextStyle(
                                                   color: AppColors.blackColor,
                                                   fontSize: height * 0.022,
@@ -230,7 +231,7 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
                                                 MainAxisAlignment.end,
                                             children: [
                                               Text(
-                                                'Dukan ka naam',
+                                                'دکان کا نام',
                                                 style: TextStyle(
                                                   color: AppColors.blackColor,
                                                   fontSize: height * 0.022,
@@ -284,7 +285,7 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
                           onPressed: () {},
                           color: AppColors.mainPrimaryColor,
                           child: Text(
-                            'Store ki location tabdeel kren',
+                            'اسٹور کا مقام تبدیل کریں',
                             style: TextStyle(
                               color: AppColors.whiteColor,
                               fontSize: height * 0.022,
